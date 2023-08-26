@@ -8,10 +8,10 @@ export const ContactsPage = ({ contacts, addContact }) => {
   Define state variables for 
   contact info and duplicate check
   */
- const [contactName, setContactName] = useState([]);
- const [phoneNumber, setPhoneNumber] = useState([]);
- const [email, setEmail] = useState([]);
- const [duplicateCheck, setDuplicateCheck] = useState([false]);
+ const [contactName, setContactName] = useState("");
+ const [phoneNumber, setPhoneNumber] = useState("");
+ const [email, setEmail] = useState("");
+ const [duplicateCheck, setDuplicateCheck] = useState(false);
 
  useEffect(() => {
   // Check for duplicate contact names in the contacts array
