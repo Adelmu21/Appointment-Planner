@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactPicker } from "./ContactPicker"; // Import the ContactPicker component
+import { ContactPicker } from "../contactPicker/ContactPicker"; // Import the ContactPicker component
 
 const getTodayString = () => {
   const [month, day, year] = new Date()
