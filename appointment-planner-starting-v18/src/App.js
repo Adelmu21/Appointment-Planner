@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Navigate } from "react-router-dom"
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Navigate } from "react-router-dom";
 import Root, { ROUTES } from "./components/root/Root";
 import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
@@ -29,7 +29,7 @@ function App() {
         element={<ContactsPage contacts={contacts} addContact={addContact} />}
       />
       <Route
-        path={ROUTES.APPOINTMENTS}
+        path=":appointmentsPage"
         element={
           <AppointmentsPage
             appointments={appointments}
