@@ -1,10 +1,10 @@
 import React from "react";
 
 export const ContactForm = ({
-  name,
-  setName,
+  contactName,
+  setContactName,
   phone,
-  setPhone,
+  setPhoneNumber,
   email,
   setEmail,
   handleSubmit
@@ -14,9 +14,9 @@ export const ContactForm = ({
       <label htmlFor="name">Name:</label>
       <input
         type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        id="contactName"
+        value={contactName}
+        onChange={(e) => setContactName(e.target.value)}
         required
       />
       <br />
@@ -27,7 +27,7 @@ export const ContactForm = ({
         id="phone"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         value={phone}
-        onChange={(e) => setPhone(e.target.value)}
+        onChange={(e) => setPhoneNumber(e.target.value)}
         required
       />
       <br />
