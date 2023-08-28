@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { AppointmentForm } from "../../components/appointmentForm/AppointmentForm";
 import { TileList } from "../../components/tileList/TileList";
 
-export const AppointmentsPage = ({ appointments, contacts, addAppointments }) => {
+export const AppointmentsPage = ({ appointments, contacts, addAppointment }) => {
   /*
   Define state variables for 
   appointment info
@@ -22,7 +22,7 @@ export const AppointmentsPage = ({ appointments, contacts, addAppointments }) =>
     Add contact info and clear data  
     */
     // Add a new appointment using the callback function
-    addAppointments(title, name, contact, date, time);
+    addAppointment(title, name, contact, date, time);
 
     // Clear form data
     setName("");
